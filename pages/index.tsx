@@ -77,7 +77,7 @@ const Home: NextPage = () => {
 
   const stats = [
     { label: 'Years Experience', value: '4+', icon: <Award className="w-6 h-6" />, color: 'text-blue-500' },
-    { label: 'Companies', value: '5+', icon: <Building2 className="w-6 h-6" />, color: 'text-green-500' },
+    { label: 'Companies', value: '3+', icon: <Building2 className="w-6 h-6" />, color: 'text-green-500' },
     { label: 'Technologies', value: '20+', icon: <Zap className="w-6 h-6" />, color: 'text-yellow-500' },
     { label: 'Projects Delivered', value: '50+', icon: <CheckCircle className="w-6 h-6" />, color: 'text-purple-500' },
   ];
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Kunal Verma - Full Stack Developer | React, Next.js & TypeScript Expert | Portfolio 2024</title>
-        <meta name="description" content="Experienced Full Stack Developer with 4+ years expertise in React, Next.js, TypeScript, Node.js. Built 50+ scalable web applications for 5+ companies. Available for freelance projects and full-time opportunities." />
+        <meta name="description" content="Experienced Full Stack Developer with 4+ years expertise in React, Next.js, TypeScript, Node.js. Built 50+ scalable web applications for 3+ companies. Available for freelance projects and full-time opportunities." />
         <meta name="keywords" content="Full Stack Developer, React Developer, Next.js Expert, TypeScript Developer, Node.js Developer, JavaScript Developer, Frontend Developer, Backend Developer, Web Developer, Software Engineer, Freelance Developer, React Native, MongoDB, PostgreSQL, AWS, Docker, Kunal Verma Portfolio" />
         
         {/* Open Graph Tags */}

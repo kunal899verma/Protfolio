@@ -669,7 +669,7 @@ const MyWork: NextPage = () => {
               <div className="mt-6 pt-4 border-t border-vscode-border/30">
               <div className="flex flex-wrap justify-center gap-3">
                 <CustomBadge label="4+ Years Experience" color="success" size="sm" variant="outline" />
-                <CustomBadge label="5+ Companies" color="brand" size="sm" variant="outline" />
+                <CustomBadge label="3+ Companies" color="brand" size="sm" variant="outline" />
                 <CustomBadge label="50+ Projects" color="warning" size="sm" variant="outline" />
                 <CustomBadge label="Available for Interview" color="error" size="sm" variant="glow" />
               </div>

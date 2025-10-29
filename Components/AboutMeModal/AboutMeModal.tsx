@@ -257,7 +257,7 @@ const AboutMeModal: React.FC<AboutMeModalProps> = ({ isOpen, onClose }) => {
                             variant="outline" 
                           />
                           <CustomBadge 
-                            label="5+ Companies" 
+                            label="3+ Companies" 
                             icon={<Building2 className="w-3 h-3" />}
                             color="brand" 
                             size="sm" 
