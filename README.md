@@ -2,7 +2,6 @@
 
 A stunning, interactive portfolio website built with **Next.js** and **TypeScript**, designed to mimic the **Visual Studio Code** interface. This project showcases a modern, developer-focused portfolio with a unique VS Code theme.
 
-![Portfolio Preview](public/project_banner.jpg)
 
 ## ✨ Features
 
