@@ -94,14 +94,14 @@ const Email: NextPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-vscode-editor-bg text-vscode-foreground font-cursor overflow-y-auto pb-24">
+    <div className="min-h-screen bg-vscode-editor-bg text-vscode-foreground font-cursor overflow-y-auto pb-20 sm:pb-18 md:pb-16">
       <Head>
         <title>Contact | Kunal Verma - Frontend Developer</title>
         <meta name="description" content="Get in touch with Kunal Verma for collaboration opportunities, project discussions, or just to say hello." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="max-w-7xl mx-auto responsive-padding py-6 sm:py-12">
+      <div className="max-w-7xl mx-auto responsive-padding py-6 sm:py-12 mb-8">
         {/* Header Section */}
         <motion.div
           className="text-center mb-12 sm:mb-16 lg:mb-20"
@@ -138,7 +138,7 @@ const Email: NextPage = () => {
           </DescriptionText>
         </motion.div>
 
-        <div className={`grid ${isTabletOrMobile ? 'grid-cols-1 gap-8' : 'grid-cols-1 lg:grid-cols-2 gap-12'} max-w-6xl mx-auto`}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
           {/* Contact Information */}
           <motion.div
             className="space-y-8"

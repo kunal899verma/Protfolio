@@ -48,14 +48,12 @@ const ProjectDetails: React.FC<any> = ({ projectDetails, altt }: any) => {
 
   return (
     <div 
-      className="h-screen overflow-y-auto scrollbar-thin scrollbar-track-vscode-editor-bg scrollbar-thumb-vscode-scrollbar-slider"
+      className="min-h-screen bg-gradient-to-br from-vscode-editor-bg via-vscode-editor-bg to-vscode-sidebar-bg text-vscode-foreground font-cursor pb-20 sm:pb-18 md:pb-16"
       style={{ 
-        height: "100vh",
         scrollbarWidth: "thin",
         scrollbarColor: "var(--vscode-scrollbar-slider) var(--vscode-editor-background)"
       }}
     >
-      <div className="min-h-screen bg-gradient-to-br from-vscode-editor-bg via-vscode-editor-bg to-vscode-sidebar-bg">
         
         {/* Hero Section */}
         <motion.div
@@ -68,7 +66,7 @@ const ProjectDetails: React.FC<any> = ({ projectDetails, altt }: any) => {
           <div className="absolute inset-0 bg-gradient-to-br from-vscode-accent/5 via-transparent to-vscode-accent/10"></div>
           
           {/* Content */}
-          <div className="relative container mx-auto px-6 py-16 max-w-6xl">
+          <div className="relative max-w-7xl mx-auto responsive-padding py-16">
             <motion.div
               className="text-center mb-12"
               initial={{ opacity: 0, y: 30 }}
@@ -178,7 +176,7 @@ const ProjectDetails: React.FC<any> = ({ projectDetails, altt }: any) => {
         </motion.div>
 
         {/* Content Sections */}
-        <div className="container mx-auto px-6 py-12 max-w-6xl">
+        <div className="max-w-7xl mx-auto responsive-padding py-12 mb-8">
           
           {/* Tech Stack Section */}
           {safeProjectDetails.skills && safeProjectDetails.skills.length > 0 && (
@@ -323,7 +321,6 @@ const ProjectDetails: React.FC<any> = ({ projectDetails, altt }: any) => {
           )}
 
         </div>
-      </div>
     </div>
   );
 };

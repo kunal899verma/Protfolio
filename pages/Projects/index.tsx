@@ -261,9 +261,9 @@ const Projects: NextPage = (props: any) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <div className="min-h-screen bg-vscode-editor-bg">
+      <div className="min-h-screen bg-vscode-editor-bg pb-20 sm:pb-18 md:pb-16">
         
-        <div className="container mx-auto responsive-padding py-8 sm:py-12 max-w-7xl relative z-10">
+        <div className="max-w-7xl mx-auto responsive-padding py-6 sm:py-12 relative z-10 mb-8">
           
           {/* Header Section */}
           <motion.div

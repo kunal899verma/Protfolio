@@ -47,7 +47,8 @@ export default function Custom404() {
   };
 
   return (
-    <div className="min-h-screen bg-vscode-editor-bg text-vscode-foreground font-cursor flex items-center justify-center p-4 sm:p-6 lg:p-8">
+    <div className="min-h-screen bg-vscode-editor-bg text-vscode-foreground font-cursor pb-20 sm:pb-18 md:pb-16 flex items-center justify-center">
+      <div className="max-w-7xl mx-auto responsive-padding py-6 sm:py-12 w-full">
       <motion.div
         className="max-w-4xl mx-auto text-center w-full"
         initial={{ opacity: 0, y: 20 }}
@@ -229,6 +230,7 @@ export default function Custom404() {
           </div>
         </motion.div>
       </motion.div>
+      </div>
     </div>
   );
 }

@@ -439,7 +439,7 @@ const Layout: React.FC = ({ children, visitorsCount }: any) => {
           {/* Editor Content */}
           <motion.main
             className={`flex-1 bg-vscode-editor-bg relative overflow-y-auto ${
-              isClient && isMobile ? 'pb-12' : 'pb-10'
+              isClient && isMobile ? 'pb-20' : 'pb-18 md:pb-16'
             }`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

@@ -975,11 +975,23 @@ body {
   padding-bottom: 0;
 }
 
-/* Ensure main content has proper spacing */
+/* Ensure main content has proper spacing for fixed status bar */
 main {
   height: 100%;
   overflow-y: auto;
-  padding-bottom: 24px; /* Space for status bar */
+  padding-bottom: 80px; /* More space for status bar - mobile */
+}
+
+@media (min-width: 640px) {
+  main {
+    padding-bottom: 72px; /* More space for status bar - small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    padding-bottom: 64px; /* More space for status bar - tablet+ */
+  }
 }
 
 /* Fixed layout adjustments */
@@ -988,11 +1000,42 @@ main {
   overflow: hidden;
 }
 
-/* Skills page specific styling */
+/* Skills page specific styling with better spacing */
 .skills-container {
-  height: calc(100vh - 24px);
+  height: calc(100vh - 36px); /* Account for mobile status bar */
   overflow-y: auto;
-  padding-bottom: 24px; /* Space for status bar */
+  padding-bottom: 80px; /* More space for status bar */
+}
+
+@media (min-width: 640px) {
+  .skills-container {
+    height: calc(100vh - 32px); /* Account for small screen status bar */
+    padding-bottom: 72px; /* More space for status bar */
+  }
+}
+
+@media (min-width: 768px) {
+  .skills-container {
+    height: calc(100vh - 28px); /* Account for tablet+ status bar */
+    padding-bottom: 64px; /* More space for status bar */
+  }
+}
+
+/* Page content wrapper with proper bottom spacing */
+.page-content {
+  padding-bottom: 80px; /* Default mobile spacing */
+}
+
+@media (min-width: 640px) {
+  .page-content {
+    padding-bottom: 72px; /* Small screen spacing */
+  }
+}
+
+@media (min-width: 768px) {
+  .page-content {
+    padding-bottom: 64px; /* Tablet+ spacing */
+  }
 }
 
 /* Professional skill icons with Cursor-style glow */

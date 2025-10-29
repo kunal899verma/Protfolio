@@ -221,7 +221,7 @@ const Skills: NextPage = () => {
       
       <div className="skills-container bg-vscode-editor-bg text-vscode-foreground font-cursor">
       
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-6 sm:py-12 pb-20 sm:pb-24 relative z-10 overflow-hidden">
+      <div className="max-w-7xl mx-auto responsive-padding py-6 sm:py-12 pb-20 sm:pb-18 md:pb-16 relative z-10 overflow-hidden mb-8">
         <motion.div
           className="text-center mb-12 sm:mb-16 lg:mb-20 relative"
           initial={{ opacity: 0, y: 30 }}
