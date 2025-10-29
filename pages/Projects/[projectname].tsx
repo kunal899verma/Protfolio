@@ -89,7 +89,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: 'blocking', // Generate pages on-demand if not pre-built
+    fallback: false, // All paths must be generated at build time for static export
   };
 }
 

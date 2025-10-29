@@ -62,6 +62,7 @@ module.exports = {
   
   // Image optimization for better SEO
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -90,6 +91,10 @@ module.exports = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
+  
+  // Static export for deployment platform
+  output: 'export',
+  distDir: 'out',
   
   // Experimental features removed due to build issues
 };
