@@ -298,8 +298,8 @@ const Projects: NextPage = (props: any) => {
               className="relative mb-12 font-medium text-vscode-foreground/90 max-w-5xl mx-auto bg-vscode-sidebar-bg/50 backdrop-blur-sm rounded-2xl p-6 border border-vscode-border/30"
             >
               Enterprise-grade applications built with modern technologies. 
-              <span className="text-vscode-accent font-medium"> Real-world impact</span> with 
-              <span className="text-green-400 font-medium"> measurable results</span>.
+              <span className="text-vscode-accent font-semibold"> Real-world impact</span> with 
+              <span className="text-green-400 font-semibold"> measurable results</span>.
             </DescriptionText>
             <div className="flex flex-wrap justify-center gap-4 mb-8 max-w-4xl mx-auto">
               <motion.div whileHover={{ scale: 1.05, y: -5 }} whileTap={{ scale: 0.95 }}>
