@@ -5,7 +5,7 @@ import Layout from "../Components/Layouts/Layout";
 import { Analytics } from "@vercel/analytics/react";
 import ErrorBoundary from "../Components/ErrorBoundary/ErrorBoundary";
 import dynamic from "next/dynamic";
-import "react-medium-image-zoom/dist/styles.css";
+// Removed react-medium-image-zoom for React 18 compatibility
 
 const NextNProgress = dynamic(() => import("nextjs-progressbar"), {
   ssr: false,

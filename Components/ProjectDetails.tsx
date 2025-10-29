@@ -1,9 +1,9 @@
-import { Scrollbars } from "react-custom-scrollbars";
+// Using native scrollbars with CSS styling
 import Image from "next/legacy/image";
 import { useMediaQuery } from "react-responsive";
 import { motion } from "framer-motion";
 import { CustomBadge, BadgeDot } from "./Common";
-import Zoom from "react-medium-image-zoom";
+// Removed react-medium-image-zoom for React 18 compatibility
 import { 
   MainHeading, 
   MediumHeading, 
@@ -47,11 +47,13 @@ const ProjectDetails: React.FC<any> = ({ projectDetails, altt }: any) => {
   };
 
   return (
-    <Scrollbars
-      autoHide
-      autoHideTimeout={1000}
-      autoHideDuration={200}
-      universal={true}
+    <div 
+      className="h-screen overflow-y-auto scrollbar-thin scrollbar-track-vscode-editor-bg scrollbar-thumb-vscode-scrollbar-slider"
+      style={{ 
+        height: "100vh",
+        scrollbarWidth: "thin",
+        scrollbarColor: "var(--vscode-scrollbar-slider) var(--vscode-editor-background)"
+      }}
     >
       <div className="min-h-screen bg-gradient-to-br from-vscode-editor-bg via-vscode-editor-bg to-vscode-sidebar-bg">
         
@@ -322,7 +324,7 @@ const ProjectDetails: React.FC<any> = ({ projectDetails, altt }: any) => {
 
         </div>
       </div>
-    </Scrollbars>
+    </div>
   );
 };
 

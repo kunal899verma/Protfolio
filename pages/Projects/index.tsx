@@ -1,6 +1,6 @@
 import React from "react";
 import { NextPage } from "next";
-import { Scrollbars } from "react-custom-scrollbars";
+// Using native scrollbars with CSS styling
 import Image from "next/legacy/image";
 import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
@@ -224,11 +224,13 @@ const Projects: NextPage = (props: any) => {
   }
 
   return (
-    <Scrollbars
-      autoHide
-      autoHideTimeout={1000}
-      autoHideDuration={200}
-      universal={true}
+    <div 
+      className="h-screen overflow-y-auto scrollbar-thin scrollbar-track-vscode-editor-bg scrollbar-thumb-vscode-scrollbar-slider"
+      style={{ 
+        height: "100vh",
+        scrollbarWidth: "thin",
+        scrollbarColor: "var(--vscode-scrollbar-slider) var(--vscode-editor-background)"
+      }}
     >
       <Head>
         <title>Projects Portfolio | Kunal Verma - 50+ Enterprise React & Next.js Applications</title>
@@ -407,9 +409,9 @@ const Projects: NextPage = (props: any) => {
             <div className="bg-gradient-to-br from-vscode-sidebar-bg/80 to-vscode-editor-bg/60 backdrop-blur-sm border border-green-400/30 rounded-2xl p-8 max-w-4xl mx-auto shadow-lg">
               <div className="text-center mb-6">
               <div className="flex items-center justify-center gap-3 mb-4">
-              <CardIcon size="lg" className="p-3 bg-gradient-to-br from-green-400/30 to-emerald-400/30 rounded-lg text-green-400 flex items-center justify-center">
-                    <FileText className="w-6 h-6" />
-                  </CardIcon>
+              <div className="p-3 bg-gradient-to-br from-green-400/30 to-emerald-400/30 rounded-lg text-green-400 flex items-center justify-center w-16 h-16 sm:w-12 sm:h-12">
+                    <FileText className="w-10 h-10 sm:w-8 sm:h-8" />
+                  </div>
                   <MediumHeading 
                     size="lg"
                     className="font-bold text-vscode-foreground text-center"
@@ -434,7 +436,7 @@ const Projects: NextPage = (props: any) => {
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Download className="w-5 h-5" />
+                  <Download className="w-6 h-6 sm:w-5 sm:h-5" />
                   Download Resume
                 </motion.a>
                 <motion.a
@@ -445,7 +447,7 @@ const Projects: NextPage = (props: any) => {
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Eye className="w-5 h-5" />
+                  <Eye className="w-6 h-6 sm:w-5 sm:h-5" />
                   View Online
                 </motion.a>
               </div>
@@ -464,7 +466,7 @@ const Projects: NextPage = (props: any) => {
 
         </div>
       </div>
-    </Scrollbars>
+    </div>
   );
 };
 

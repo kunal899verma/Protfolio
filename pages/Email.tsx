@@ -387,7 +387,7 @@ const Email: NextPage = () => {
                 download="Kunal_Verma_React_NextJS_Developer.pdf"
                 className="inline-flex items-center justify-center gap-3 px-4 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                <Download className="w-5 h-5" />
+                <Download className="w-6 h-6 sm:w-5 sm:h-5" />
                 <ButtonText size="md">Download Resume</ButtonText>
               </a>
               <a

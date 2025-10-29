@@ -533,7 +533,7 @@ const Home: NextPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 4.1 }}
               >
-                <Download className="w-4 h-4" />
+                <Download className="w-5 h-5 sm:w-4 sm:h-4" />
                 <span className="text-sm font-semibold">Download Resume</span>
               </motion.a>
               <motion.a

@@ -200,20 +200,19 @@ const AboutMeModal: React.FC<AboutMeModalProps> = ({ isOpen, onClose }) => {
                   {/* Resume Download Section */}
                   <div>
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="text-xl p-2 bg-gradient-to-br from-orange-400/20 to-orange-400/10 rounded-lg">📄</div>
-                      <h3 className="text-xl font-bold text-orange-400">Resume</h3>
+                    <div className="flex-shrink-0">
+                          <div className="w-12 h-12 bg-gradient-to-br from-orange-400/20 to-red-400/20 rounded-lg border border-orange-400/30 flex items-center justify-center relative overflow-hidden">
+                            <FileText className="w-6 h-6 sm:w-5 sm:h-5 text-orange-400" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                          </div>
+                        </div>                      <h3 className="text-xl font-bold text-orange-400">Resume</h3>
                       <BadgeDot color="warning" size="md" />
                     </div>
                     
                     <div className="bg-vscode-editor-bg/30 rounded-xl p-6 border border-vscode-border/30">
                       <div className="flex flex-col md:flex-row items-center gap-6">
                         {/* Resume Preview */}
-                        <div className="flex-shrink-0">
-                          <div className="w-24 h-32 bg-gradient-to-br from-orange-400/20 to-red-400/20 rounded-lg border border-orange-400/30 flex items-center justify-center relative overflow-hidden">
-                            <FileText className="w-12 h-12 text-orange-400" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                          </div>
-                        </div>
+                       
                         
                         {/* Resume Info */}
                         <div className="flex-1 text-center md:text-left">
@@ -225,11 +224,11 @@ const AboutMeModal: React.FC<AboutMeModalProps> = ({ isOpen, onClose }) => {
                           </p>
                           
                           {/* Action Buttons */}
-                          <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                          <div className="flex flex-col sm:flex-row gap-3 justify-center">
                             <a
                               href="/Resume/Kunal_Verma_React_NextJS_Developer.pdf"
                               download="Kunal_Verma_React_NextJS_Developer.pdf"
-                              className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                              className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                             >
                               <Download className="w-4 h-4" />
                               Download Resume
@@ -238,7 +237,7 @@ const AboutMeModal: React.FC<AboutMeModalProps> = ({ isOpen, onClose }) => {
                               href="/Resume/Kunal_Verma_React_NextJS_Developer.pdf"
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center gap-2 px-4 py-2 bg-vscode-sidebar-bg hover:bg-vscode-hover-background text-vscode-foreground rounded-lg font-medium transition-all duration-300 border border-vscode-border shadow-lg hover:shadow-xl"
+                              className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-vscode-sidebar-bg hover:bg-vscode-hover-background text-vscode-foreground rounded-lg font-medium transition-all duration-300 border border-vscode-border shadow-lg hover:shadow-xl"
                             >
                               <Eye className="w-4 h-4" />
                               View Online
@@ -405,7 +404,7 @@ const AboutMeModal: React.FC<AboutMeModalProps> = ({ isOpen, onClose }) => {
                     Download Resume
                   </a>
                   <button
-                    className="w-full sm:w-auto px-8 py-3 bg-vscode-sidebar-bg hover:bg-vscode-hover-background text-vscode-foreground rounded-xl font-semibold transition-all duration-300 border border-vscode-border shadow-lg hover:shadow-xl"
+                    className="w-full sm:w-auto px-8 py-3 bg-vscode-sidebar-bg hover:bg-vscode-hover-background text-vscode-foreground rounded-xl font-semibold text-center transition-all duration-300 border border-vscode-border shadow-lg hover:shadow-xl flex items-center justify-center"
                     onClick={onClose}
                   >
                     Close
