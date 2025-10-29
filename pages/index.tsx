@@ -282,7 +282,7 @@ const Home: NextPage = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 1.2 }}
                   >
-                    {`// Senior Frontend Developer | React.js & Next.js Specialist`}
+                    {`// Frontend Developer | React.js & Next.js Specialist`}
                   </motion.p>
                   
                   <motion.p 

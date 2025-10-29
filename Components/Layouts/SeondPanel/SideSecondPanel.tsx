@@ -257,7 +257,7 @@ export const SideSecondPanel: React.FC<IProps> = (props: any) => {
           </motion.div>
           <div className="flex-1 min-w-0">
             <p className="text-xs font-semibold text-vscode-foreground truncate">Kunal Verma</p>
-            <p className="text-xs text-vscode-foreground/60 truncate">Senior Frontend Developer</p>
+            <p className="text-xs text-vscode-foreground/60 truncate">Frontend Developer</p>
           </div>
         </div>
       </motion.div>

@@ -67,7 +67,7 @@ const AboutMeModal: React.FC<AboutMeModalProps> = ({ isOpen, onClose }) => {
 
   const personalInfo = {
     name: "Kunal Verma",
-    role: "Senior Frontend Developer",
+    role: "Frontend Developer",
     location: "Indore, Madhya Pradesh, India",
     experience: "4+ Years",
     email: "kunalv899@gmail.com",

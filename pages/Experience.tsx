@@ -53,7 +53,7 @@ const MyWork: NextPage = () => {
     {
       company: "Sequifi Technologies",
       location: "Indore",
-      position: "Senior Frontend Developer",
+      position: "Frontend Developer",
       duration: "Feb 2025 – Present",
       logo: "/sequifi-logo.png",
       achievements: [

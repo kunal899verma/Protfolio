@@ -9,7 +9,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onRunClick }) => {
   const codeLines = [
     "const developer = {",
     "  name: 'Kunal Verma',",
-    "  role: 'Senior Frontend Developer',",
+    "  role: 'Frontend Developer',",
     "  experience: '4+ years',",
     "  specialization: ['React.js', 'Next.js', 'TypeScript'],",
     "  passion: 'Building exceptional user experiences',",
@@ -68,7 +68,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onRunClick }) => {
               {line.includes('role:') && (
                 <>
                   <span className="text-vscode-keyword">  role: </span>
-                  <span className="text-vscode-string">'Senior Frontend Developer'</span>
+                  <span className="text-vscode-string">'Frontend Developer'</span>
                   <span className="text-vscode-foreground">,</span>
                 </>
               )}
