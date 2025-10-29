@@ -216,7 +216,7 @@ const AboutMeModal: React.FC<AboutMeModalProps> = ({ isOpen, onClose }) => {
                         
                         {/* Resume Info */}
                         <div className="flex-1 text-center md:text-left">
-                          <h4 className="text-lg font-semibold text-vscode-foreground mb-2">
+                          <h4 className="text-lg text-center font-semibold text-vscode-foreground mb-2">
                             Kunal Verma - React.js & Next.js Developer
                           </h4>
                           <p className="text-sm text-vscode-foreground/70 mb-4">
