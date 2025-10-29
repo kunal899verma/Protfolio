@@ -1,0 +1,27 @@
+# Robots.txt for Kunal Verma Portfolio
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://kunalverma.dev/sitemap.xml
+
+# Crawl Delay (be respectful to search engines)
+Crawl-delay: 1
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow important pages for better indexing
+Allow: /
+Allow: /Skills
+Allow: /Projects
+Allow: /Experience
+Allow: /Email
+Allow: /Projects/*
+
+# Block common bot traps
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
