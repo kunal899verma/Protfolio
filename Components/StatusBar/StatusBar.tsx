@@ -84,8 +84,8 @@ const StatusBar: React.FC<StatusBarProps> = ({ totalVisits }) => {
       icon: <ButtonIcon size="xs" className="text-orange-500"><svg fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm2 2v10h10V6H5z" clipRule="evenodd" /><path d="M7 8h6v1H7V8zM7 10h6v1H7v-1zM7 12h4v1H7v-1z" /></svg></ButtonIcon>,
       text: 'Resume',
       color: 'text-orange-500',
-      href: '/Resume/Kunal_Verma_React_NextJS_Developer.pdf',
-      download: 'Kunal_Verma_React_NextJS_Developer.pdf'
+      href: '/Resume/Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf',
+      download: 'Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf'
     },
     {
       id: 'visits',

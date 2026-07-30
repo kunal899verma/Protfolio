@@ -96,7 +96,7 @@ const Email: NextPage = () => {
   return (
     <div className="min-h-screen bg-vscode-editor-bg text-vscode-foreground font-cursor overflow-y-auto pb-20 sm:pb-18 md:pb-16">
       <Head>
-        <title>Contact | Kunal Verma - Frontend Developer</title>
+        <title>Contact | Kunal Verma - Senior Full Stack Engineer</title>
         <meta name="description" content="Get in touch with Kunal Verma for collaboration opportunities, project discussions, or just to say hello." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -383,8 +383,8 @@ const Email: NextPage = () => {
                 <ButtonText size="md">Email Me Directly</ButtonText>
               </a>
               <a
-                href="/Resume/Kunal_Verma_React_NextJS_Developer.pdf"
-                download="Kunal_Verma_React_NextJS_Developer.pdf"
+                href="/Resume/Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
+                download="Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
                 className="inline-flex items-center justify-center gap-3 px-4 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 <Download className="w-6 h-6 sm:w-5 sm:h-5" />

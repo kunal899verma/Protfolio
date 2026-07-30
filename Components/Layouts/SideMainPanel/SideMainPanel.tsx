@@ -80,7 +80,7 @@ const SideMainPanel: React.FC<SideMainPanelProps> = ({
     {
       id: 'resume',
       title: 'Download Resume',
-      path: '/Resume/Kunal_Verma_React_NextJS_Developer.pdf',
+      path: '/Resume/Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf',
       color: 'text-orange-500',
       hoverColor: 'hover:text-orange-400',
       isDownload: true
@@ -93,7 +93,7 @@ const SideMainPanel: React.FC<SideMainPanelProps> = ({
       // Handle resume download
       const link = document.createElement('a');
       link.href = path;
-      link.download = 'Kunal_Verma_React_NextJS_Developer.pdf';
+      link.download = 'Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

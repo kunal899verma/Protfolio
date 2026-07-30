@@ -233,28 +233,28 @@ const Projects: NextPage = (props: any) => {
       }}
     >
       <Head>
-        <title>Projects Portfolio | Kunal Verma - 50+ Enterprise React & Next.js Applications</title>
+        <title>Projects Portfolio | Kunal Verma - Enterprise React, Next.js & GenAI Applications</title>
         <meta
           name="description"
-          content="Explore 50+ enterprise-grade projects built with React, Next.js, TypeScript, Node.js. Healthcare, FinTech, E-commerce solutions for top companies. Full-stack development portfolio showcasing scalable applications."
+          content="Explore enterprise-grade projects built with React, Next.js, TypeScript, Node.js, and production GenAI/RAG features. HRTech, FinTech, Healthcare, and E-commerce solutions for top companies including HDFC Bank."
         />
         <meta name="keywords" content="React Projects, Next.js Applications, TypeScript Portfolio, Full Stack Projects, Enterprise Web Development, Healthcare Apps, FinTech Solutions, E-commerce Platforms, Scalable Applications, Modern Web Development" />
         
         {/* Open Graph Tags */}
         <meta property="og:title" content="Projects Portfolio | Kunal Verma - Enterprise React & Next.js Applications" />
         <meta property="og:description" content="Explore 50+ enterprise-grade projects built with React, Next.js, TypeScript. Healthcare, FinTech, E-commerce solutions for top companies." />
-        <meta property="og:url" content="https://kunalverma.dev/Projects" />
-        <meta property="og:image" content="https://kunalverma.dev/project_banner.jpg" />
+        <meta property="og:url" content="https://kunalportfolio.wasmer.app/Projects" />
+        <meta property="og:image" content="https://kunalportfolio.wasmer.app/project_banner.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
-        
+
         {/* Twitter Card Tags */}
         <meta name="twitter:title" content="Projects Portfolio | Kunal Verma - Enterprise Applications" />
         <meta name="twitter:description" content="Explore 50+ enterprise-grade projects built with React, Next.js, TypeScript for top companies." />
-        <meta name="twitter:image" content="https://kunalverma.dev/project_banner.jpg" />
+        <meta name="twitter:image" content="https://kunalportfolio.wasmer.app/project_banner.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        
-        <link rel="canonical" href="https://kunalverma.dev/Projects" />
+
+        <link rel="canonical" href="https://kunalportfolio.wasmer.app/Projects" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="HandheldFriendly" content="True" />
         <meta name="MobileOptimized" content="320" />
@@ -303,7 +303,7 @@ const Projects: NextPage = (props: any) => {
             </DescriptionText>
             <div className="flex flex-wrap justify-center gap-4 mb-8 max-w-4xl mx-auto">
               <motion.div whileHover={{ scale: 1.05, y: -5 }} whileTap={{ scale: 0.95 }}>
-                <CustomBadge label="5 Enterprise Projects" color="brand" size="md" variant="glow" />
+                <CustomBadge label="4 Enterprise Projects" color="brand" size="md" variant="glow" />
               </motion.div>
               <motion.div whileHover={{ scale: 1.05, y: -5 }} whileTap={{ scale: 0.95 }}>
                 <CustomBadge label="React.js & Next.js" color="success" size="md" variant="outline" />
@@ -383,11 +383,11 @@ const Projects: NextPage = (props: any) => {
                 </Caption>
               </div>
               <div className="text-center bg-vscode-sidebar-bg/30 border border-vscode-border/50 rounded-xl p-6 h-full flex flex-col justify-center hover:border-vscode-accent/50 transition-all duration-300">
-                <SmallHeading 
+                <SmallHeading
                   size="md"
                   className="font-bold text-purple-400 mb-1"
                 >
-                  4+ Years
+                  5+ Years
                 </SmallHeading>
                 <Caption 
                   size="xs"
@@ -430,8 +430,8 @@ const Projects: NextPage = (props: any) => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <motion.a
-                  href="/Resume/Kunal_Verma_React_NextJS_Developer.pdf"
-                  download="Kunal_Verma_React_NextJS_Developer.pdf"
+                  href="/Resume/Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
+                  download="Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
                   className="inline-flex items-center gap-3 px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
@@ -440,7 +440,7 @@ const Projects: NextPage = (props: any) => {
                   Download Resume
                 </motion.a>
                 <motion.a
-                  href="/Resume/Kunal_Verma_React_NextJS_Developer.pdf"
+                  href="/Resume/Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 px-6 py-3 bg-vscode-editor-bg hover:bg-vscode-hover-background text-green-400 border border-green-400/50 hover:border-green-400 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg"

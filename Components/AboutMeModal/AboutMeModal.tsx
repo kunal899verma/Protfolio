@@ -67,9 +67,9 @@ const AboutMeModal: React.FC<AboutMeModalProps> = ({ isOpen, onClose }) => {
 
   const personalInfo = {
     name: "Kunal Verma",
-    role: "Frontend Developer",
+    role: "Senior Full Stack Engineer",
     location: "Indore, Madhya Pradesh, India",
-    experience: "4+ Years",
+    experience: "5+ Years",
     email: "kunalv899@gmail.com",
     phone: "+91 6266155742",
     linkedin: "linkedin.com/in/kunalv899",
@@ -77,20 +77,21 @@ const AboutMeModal: React.FC<AboutMeModalProps> = ({ isOpen, onClose }) => {
   };
 
   const expertise = [
+    { category: "AI & GenAI", skills: ["LLM API Integration", "RAG", "Vector Embeddings", "Prompt Engineering"], color: "aqua" },
     { category: "Frontend", skills: ["React.js", "Next.js", "TypeScript", "JavaScript"], color: "brand" },
-    { category: "Styling", skills: ["Tailwind CSS", "Styled Components", "CSS3", "SCSS"], color: "aqua" },
-    { category: "State Management", skills: ["Redux Toolkit", "Context API", "Zustand"], color: "success" },
-    { category: "Backend", skills: ["Node.js", "Express.js", "PostgreSQL"], color: "warning" },
-    { category: "Tools", skills: ["Git", "Docker", "Webpack", "Vite"], color: "neutral" }
+    { category: "Styling", skills: ["Tailwind CSS", "Styled Components", "Material UI", "CSS3"], color: "aqua" },
+    { category: "State Management", skills: ["Redux Toolkit", "React Query", "Context API", "Zustand"], color: "success" },
+    { category: "Backend", skills: ["Node.js", "Express.js", "GraphQL", "PostgreSQL"], color: "warning" },
+    { category: "Tools", skills: ["Git", "Docker", "AWS", "GitHub Actions"], color: "neutral" }
   ];
 
   const achievements = [
-    { icon: Trophy, text: "Led development of HR platform serving 500+ companies" },
-    { icon: Rocket, text: "Built systems reducing hiring time by 50%" },
-    { icon: Zap, text: "Improved app performance by 45% through optimization" },
-    { icon: Target, text: "Delivered 50+ successful projects across 4+ years" },
-    { icon: Briefcase, text: "Worked with enterprise clients like HDFC Bank" },
-    { icon: Star, text: "Specialized in React.js ecosystem and modern web technologies" }
+    { icon: Trophy, text: "Architected a multi-tenant HR SaaS platform serving 500+ enterprise clients" },
+    { icon: Zap, text: "Shipped a production GenAI feature: LLM APIs + RAG pipeline with embeddings & vector search" },
+    { icon: Rocket, text: "Built real-time hiring pipelines that cut hiring time by 50% for 2,000+ candidates" },
+    { icon: Target, text: "Reduced contract processing errors by 65% with a digital contract management system" },
+    { icon: Briefcase, text: "Delivered enterprise platforms for clients including HDFC Bank (Banking-as-a-Service)" },
+    { icon: Star, text: "5+ years building production apps in React.js, Next.js, Node.js, and TypeScript" }
   ];
 
   const interests = [
@@ -217,24 +218,24 @@ const AboutMeModal: React.FC<AboutMeModalProps> = ({ isOpen, onClose }) => {
                         {/* Resume Info */}
                         <div className="flex-1 text-center md:text-left">
                           <h4 className="text-lg text-center font-semibold text-vscode-foreground mb-2">
-                            Kunal Verma - React.js & Next.js Developer
+                            Kunal Verma - Senior Full Stack Engineer
                           </h4>
                           <p className="text-sm text-vscode-foreground/70 mb-4">
-                            Comprehensive overview of my experience, skills, and achievements in modern web development.
+                            Comprehensive overview of my experience, skills, and achievements across full-stack web development and production GenAI/RAG features.
                           </p>
                           
                           {/* Action Buttons */}
                           <div className="flex flex-col sm:flex-row gap-3 justify-center">
                             <a
-                              href="/Resume/Kunal_Verma_React_NextJS_Developer.pdf"
-                              download="Kunal_Verma_React_NextJS_Developer.pdf"
+                              href="/Resume/Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
+                              download="Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
                               className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                             >
                               <Download className="w-4 h-4" />
                               Download Resume
                             </a>
                             <a
-                              href="/Resume/Kunal_Verma_React_NextJS_Developer.pdf"
+                              href="/Resume/Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-vscode-sidebar-bg hover:bg-vscode-hover-background text-vscode-foreground rounded-lg font-medium transition-all duration-300 border border-vscode-border shadow-lg hover:shadow-xl"
@@ -249,22 +250,22 @@ const AboutMeModal: React.FC<AboutMeModalProps> = ({ isOpen, onClose }) => {
                       {/* Resume Stats */}
                       <div className="mt-6 pt-4 border-t border-vscode-border/30">
                         <div className="flex flex-wrap justify-center gap-3">
-                          <CustomBadge 
-                            label="4+ Years Experience" 
+                          <CustomBadge
+                            label="5+ Years Experience"
                             icon={<BarChart3 className="w-3 h-3" />}
-                            color="success" 
-                            size="sm" 
-                            variant="outline" 
+                            color="success"
+                            size="sm"
+                            variant="outline"
                           />
-                          <CustomBadge 
-                            label="3+ Companies" 
+                          <CustomBadge
+                            label="4+ Companies"
                             icon={<Building2 className="w-3 h-3" />}
-                            color="brand" 
-                            size="sm" 
-                            variant="outline" 
+                            color="brand"
+                            size="sm"
+                            variant="outline"
                           />
-                          <CustomBadge 
-                            label="50+ Projects" 
+                          <CustomBadge
+                            label="50+ Projects"
                             icon={<Rocket className="w-3 h-3" />}
                             color="warning" 
                             size="sm" 
@@ -396,8 +397,8 @@ const AboutMeModal: React.FC<AboutMeModalProps> = ({ isOpen, onClose }) => {
                     Get in Touch
                   </a>
                   <a
-                    href="/Resume/Kunal_Verma_React_NextJS_Developer.pdf"
-                    download="Kunal_Verma_React_NextJS_Developer.pdf"
+                    href="/Resume/Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
+                    download="Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
                     className="w-full sm:w-auto px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-xl font-semibold text-center transition-all duration-300 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
                   >
                     <Download className="w-4 h-4" />

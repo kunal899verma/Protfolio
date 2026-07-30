@@ -66,8 +66,6 @@ export const SideSecondPanel: React.FC<IProps> = (props: any) => {
       setActiveFile("dozee-healthcare.tsx");
     } else if (currentPath.includes("/Projects/hdfc-bank-baas")) {
       setActiveFile("hdfc-bank-baas.tsx");
-    } else if (currentPath.includes("/Projects/atomberg-smart-appliances")) {
-      setActiveFile("atomberg-smart-appliances.tsx");
     } else if (currentPath.includes("/Projects/sequifi-hr-platform")) {
       setActiveFile("sequifi-hr-platform.tsx");
     } else if (currentPath === "/Email") {
@@ -257,7 +255,7 @@ export const SideSecondPanel: React.FC<IProps> = (props: any) => {
           </motion.div>
           <div className="flex-1 min-w-0">
             <p className="text-xs font-semibold text-vscode-foreground truncate">Kunal Verma</p>
-            <p className="text-xs text-vscode-foreground/60 truncate">Frontend Developer</p>
+            <p className="text-xs text-vscode-foreground/60 truncate">Senior Full Stack Engineer</p>
           </div>
         </div>
       </motion.div>
@@ -307,7 +305,7 @@ export const SideSecondPanel: React.FC<IProps> = (props: any) => {
             icon={<Briefcase className="w-4 h-4" />}
             isExpanded={expandedSections.projects}
             onToggle={() => toggleSection('projects')}
-            count={5}
+            count={4}
           />
           <AnimatePresence>
             {expandedSections.projects && (
@@ -321,7 +319,6 @@ export const SideSecondPanel: React.FC<IProps> = (props: any) => {
                 <FileItem filename="KamaAyurveda.tsx" path="/Projects/kama-ayurveda" isActive={activeFile === "kama-ayurveda.tsx"} />
                 <FileItem filename="DozeeHealthcare.tsx" path="/Projects/dozee-healthcare" isActive={activeFile === "dozee-healthcare.tsx"} />
                 <FileItem filename="HDFCBankBaaS.tsx" path="/Projects/hdfc-bank-baas" isActive={activeFile === "hdfc-bank-baas.tsx"} />
-                <FileItem filename="AtombergSmart.tsx" path="/Projects/atomberg-smart-appliances" isActive={activeFile === "atomberg-smart-appliances.tsx"} />
                 <FileItem filename="SequifiHR.tsx" path="/Projects/sequifi-hr-platform" isActive={activeFile === "sequifi-hr-platform.tsx"} />
               </motion.div>
             )}

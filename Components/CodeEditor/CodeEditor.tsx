@@ -9,11 +9,11 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onRunClick }) => {
   const codeLines = [
     "const developer = {",
     "  name: 'Kunal Verma',",
-    "  role: 'Frontend Developer',",
-    "  experience: '4+ years',",
+    "  role: 'Senior Full Stack Engineer',",
+    "  experience: '5+ years',",
     "  specialization: ['React.js', 'Next.js', 'TypeScript'],",
     "  passion: 'Building exceptional user experiences',",
-    "  currentFocus: 'Enterprise-grade web applications',",
+    "  currentFocus: 'GenAI & RAG powered applications',",
     "  availability: 'Open for new opportunities'",
     "};"
   ];
@@ -68,14 +68,14 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onRunClick }) => {
               {line.includes('role:') && (
                 <>
                   <span className="text-vscode-keyword">  role: </span>
-                  <span className="text-vscode-string">'Frontend Developer'</span>
+                  <span className="text-vscode-string">'Senior Full Stack Engineer'</span>
                   <span className="text-vscode-foreground">,</span>
                 </>
               )}
               {line.includes('experience:') && (
                 <>
                   <span className="text-vscode-keyword">  experience: </span>
-                  <span className="text-vscode-string">'4+ years'</span>
+                  <span className="text-vscode-string">'5+ years'</span>
                   <span className="text-vscode-foreground">,</span>
                 </>
               )}
@@ -101,7 +101,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onRunClick }) => {
               {line.includes('currentFocus:') && (
                 <>
                   <span className="text-vscode-keyword">  currentFocus: </span>
-                  <span className="text-vscode-string">'Enterprise-grade web applications'</span>
+                  <span className="text-vscode-string">'GenAI & RAG powered applications'</span>
                   <span className="text-vscode-foreground">,</span>
                 </>
               )}

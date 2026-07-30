@@ -10,66 +10,55 @@ export const projectsdata = () => [
       "Next.js",
       "TypeScript",
       "Redux Toolkit",
+      "React Query",
       "Tailwind CSS",
       "Node.js",
-      "GraphQL",
-      "Shopify APIs",
+      "PostgreSQL",
       "Strapi CMS",
       "AWS"
     ],
-    description: `Enterprise e-commerce platform for India's premium Ayurvedic skincare and wellness brand. Enhanced customer experience through advanced authentication, loyalty programs, and personalized shopping journeys, serving thousands of customers daily.`,
+    description: `Enterprise e-commerce platform for India's premium Ayurvedic skincare and wellness brand, built during my time at Growisto. Rebuilt customer authentication and account management on a secure token-based architecture and delivered a loyalty & rewards platform, improving retention and engagement.`,
     link: "https://www.kamaayurveda.in/",
     github: null, // Private enterprise project
     logo: "/kamaAyurveda.png",
     features: [
-      " Enhanced Customer Account Management & Authentication - Reduced login errors by 30% and improved user retention by 15%",
-      " Comprehensive Loyalty & Rewards Platform - Increased customer participation by 20% with points-based rewards system",
-      " Advanced Product Catalog with 500+ Ayurvedic products across Skincare, Haircare, Bath & Body categories",
-      " Responsive Design optimized for mobile-first shopping experience across all devices",
+      " Rebuilt Customer Authentication & Account Management on a secure token-based architecture - Reduced login failures by 30% and increased customer retention by 15%",
+      " Loyalty & Rewards Platform - Real-time point tracking, tier-based rewards, and redemption workflows, increasing customer engagement by 20%",
+      " Managed Complex Application State with Redux Toolkit and React Query - Kept performance and data consistency stable through high-traffic sale events",
+      " Enhanced REST APIs and Optimized SQL Queries - Reduced response times and backend server load across high-traffic e-commerce flows",
+      " Responsive, Mobile-First Design across the full shopping journey - browsing, cart, checkout, and account management",
       " Secure Payment Gateway Integration with multiple payment options and fraud protection",
-      " Real-time Inventory Management with automated stock updates and low-stock alerts",
-      " Personalized Product Recommendations using customer behavior analytics",
-      " Performance Optimization achieving 40% faster page load times and improved SEO rankings",
-      " Seamless CMS Integration with Strapi for dynamic content management and product updates",
-      " Automated Email Marketing campaigns for abandoned cart recovery and customer engagement"
+      " Seamless CMS Integration with Strapi for dynamic content and product management",
+      " Partnered with Backend Teams on API design and contract definition, improving long-term maintainability"
     ],
-   
     height: 2200,
     businessImpact: {
-      userRetention: "+15%",
-      loginErrors: "-30%",
-      loyaltyParticipation: "+20%",
-      pageLoadTime: "-40%",
-      mobileConversion: "+25%"
+      loginFailures: "-30%",
+      customerRetention: "+15%",
+      loyaltyEngagement: "+20%",
+      backendLoad: "Reduced"
     },
     others: [
       {
         link: "/Projects/dozee-healthcare",
         thumbnail: "/project_banner.jpg",
-        logo: "/dozee.png", 
+        logo: "/dozee.png",
         title: "Dozee Healthcare Platform",
-        description: `AI-powered remote patient monitoring platform revolutionizing healthcare delivery.`,
+        description: `Company website built from scratch with Next.js SSR/SSG and Strapi CMS.`,
       },
       {
         link: "/Projects/hdfc-bank-baas",
         thumbnail: "/project_banner.jpg",
         logo: "/hdfc.jpeg",
         title: "HDFC Bank BaaS Platform",
-        description: `Enterprise Banking-as-a-Service platform for corporate partners and financial services.`,
-      },
-      {
-        link: "/Projects/atomberg-smart-appliances",
-        thumbnail: "/project_banner.jpg",
-        logo: "/aatomberg.png",
-        title: "Atomberg Smart Appliances",
-        description: `IoT-enabled smart home appliances platform with advanced energy efficiency features.`,
+        description: `Enterprise Banking-as-a-Service admin dashboard and partner portal.`,
       },
       {
         link: "/Projects/sequifi-hr-platform",
         thumbnail: "/project_banner.jpg",
         logo: "/sequifi.png",
         title: "Sequifi HR Platform",
-        description: `Comprehensive HR lifecycle management platform serving 500+ companies.`,
+        description: `Multi-tenant HR lifecycle SaaS platform serving 500+ enterprise clients, with a production GenAI & RAG feature.`,
       }
     ],
   },
@@ -79,40 +68,35 @@ export const projectsdata = () => [
     banner: "/project_banner.jpg",
     skills: [
       "React.js",
-      "Next.js", 
+      "Next.js",
       "TypeScript",
-      "Framer Motion",
-      "Lottie Animations",
+      "Redux Toolkit",
+      "React Query",
       "Strapi CMS",
       "Tailwind CSS",
-      "GraphQL",
+      "Node.js",
       "AWS",
       "Performance Optimization"
     ],
-    description: `Revolutionary AI-powered Remote Patient Monitoring platform transforming healthcare delivery. Built from scratch to serve 300+ hospitals, monitoring 500K+ patients with contactless vital signs tracking and early warning systems.`,
+    description: `Company website for Dozee, an AI-powered remote patient monitoring platform, built from scratch during my time at Growisto using Next.js SSR and SSG with Strapi as a headless CMS.`,
     link: "https://dozee.us/",
     github: null, // Private healthcare project
     logo: "/dozee.png",
     features: [
-      "🏥 Built Complete Website from Scratch - Achieved 50% traffic growth in just 3 months with modern React.js & Next.js architecture",
-      " Enhanced User Engagement with Lottie Animations - Increased user interaction by 25% through smooth, professional animations",
-      " Streamlined Content Management via Strapi CMS - Improved content update efficiency by 40% for healthcare professionals",
-      " Contactless Vital Signs Monitoring - HR, RR, BP, and SpO₂ with clinical-grade accuracy using under-mattress sensors",
-      " Advanced Early Warning System - Predicts patient deterioration up to 16 hours in advance, reducing Code Blue events by 80%",
-      " Enterprise Dashboard - Real-time monitoring of 18K+ beds across 300+ hospitals with centralized management",
-      " ROI Calculator - Interactive tool showing $1M+ annual savings per facility with detailed breakdown",
-      " HIPAA & SOC2 Compliant - Enterprise-grade security for sensitive healthcare data protection",
-      " Responsive Healthcare UI - Optimized for medical professionals across desktop, tablet, and mobile devices",
-      " Performance Optimized - Achieved excellent Core Web Vitals scores for critical healthcare applications"
+      " Built the Company Website from Scratch with Next.js SSR & SSG - Grew organic traffic by 50% in just three months",
+      " Integrated Strapi as a Headless CMS - Improved marketing publishing efficiency by 40% for the content team",
+      " Managed Complex Application State with Redux Toolkit and React Query - Stable performance across traffic spikes",
+      " Enhanced REST APIs and Backend Integrations - Reduced response times for content and product data",
+      " Responsive, Accessible Healthcare UI - Optimized for medical professionals and patients across desktop, tablet, and mobile",
+      " Performance Optimization - Strong Core Web Vitals and Lighthouse scores for a content-heavy healthcare site",
+      " Partnered with Backend Teams on API Design & Contract Definition - Improved maintainability across the platform"
     ],
-   
-    height: 2400,
+    height: 2000,
     businessImpact: {
-      trafficGrowth: "+50%",
-      userEngagement: "+25%",
-      cmsEfficiency: "+40%",
-      hospitalsCovered: "300+",
-      patientsMonitored: "500K+"
+      organicTraffic: "+50%",
+      publishingEfficiency: "+40%",
+      timeToGrowth: "3 Months",
+      coreWebVitals: "Optimized"
     },
     others: [],
   },
@@ -123,88 +107,39 @@ export const projectsdata = () => [
     skills: [
       "React.js",
       "Next.js",
-      "TypeScript", 
+      "TypeScript",
       "Redux Toolkit",
       "Node.js",
-      "Express.js",
-      "PostgreSQL",
       "REST APIs",
-      "Microservices",
-      "Docker",
-      "AWS"
+      "Elasticsearch",
+      "Redis",
+      "PostgreSQL",
+      "Multi-Role Authentication"
     ],
-    description: `Enterprise Banking-as-a-Service platform for HDFC Bank, enabling seamless integration of banking services for corporate partners. Streamlined operations for thousands of business clients with advanced admin dashboards and automated workflows.`,
+    description: `Enterprise Banking-as-a-Service (BaaS) platform built for HDFC Bank during my time at Growisto, enabling seamless integration of banking services for corporate partners with an automated admin dashboard and status management system.`,
     link: null, // Private banking project
     github: null, // Confidential enterprise project
     logo: "/hdfc.jpeg",
     features: [
-      "🏦 Comprehensive Admin Dashboard & Status Management - Reduced manual administrative work by 50% and operational delays by 30%",
-      "🤝 Corporate Partner Portal Development - Improved partner submission speed by 20% with streamlined onboarding process",
-      " Automated Workflow Management - Built multi-stage approval systems reducing processing time for business applications",
-      " Real-time Transaction Monitoring - Live tracking of banking transactions with advanced filtering and search capabilities",
-      " Enterprise Security Implementation - Multi-factor authentication and role-based access control for sensitive banking data",
-      " Performance Analytics Dashboard - Comprehensive reporting tools for business metrics and operational insights",
-      " API Integration Hub - Seamless integration with core banking systems and third-party financial services",
-      " Responsive Banking Interface - Mobile-optimized design for banking professionals and corporate clients",
-      "🛡️ Compliance & Audit Trail - Complete audit logging for regulatory compliance and risk management",
-      "⚙️ Microservices Architecture - Scalable backend services handling high-volume banking transactions"
+      "🏦 Admin Dashboard & Status Management System - Automated real-time workflows and status tracking, reducing manual operational effort by 50% and SLA delays by 30%",
+      "🤝 Corporate Partner Portal - Multi-role authentication and Elasticsearch-powered search with dynamic approval workflows, improving onboarding submission speed by 20%",
+      " Enhanced REST APIs & Redis Caching - Optimized SQL queries to reduce response times and backend server load across high-traffic banking services",
+      " Dynamic Approval Workflows - Multi-stage, role-based approval chains for corporate partner onboarding",
+      " Real-time Status Tracking - Live visibility into workflow and transaction status for operations teams",
+      " Enterprise Security - Multi-role authentication and access control for sensitive banking data",
+      "⚙️ API Design & Contract Definition - Partnered with backend teams to define REST contracts, versioning, and error-handling standards"
     ],
-    
-    height: 2100,
+    height: 2000,
     businessImpact: {
       manualWorkReduction: "-50%",
-      operationalDelays: "-30%", 
+      slaDelays: "-30%",
       submissionSpeed: "+20%",
-      processingEfficiency: "+35%",
-      clientSatisfaction: "+25%"
+      searchPerformance: "Elasticsearch-Powered"
     },
     others: [],
   },
   {
-    title: "Atomberg Smart Appliances Platform",
-    name: "atomberg-smart-appliances.tsx", 
-    banner: "/project_banner.jpg",
-    skills: [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Node.js",
-      "IoT Integration",
-      "Smart Home APIs",
-      "Performance Optimization",
-      "Responsive Design",
-      "E-commerce"
-    ],
-    description: `Innovative smart home appliances platform for Atomberg Technologies, featuring IoT-enabled ceiling fans, kitchen appliances, and smart locks. Delivering tech-first solutions with focus on energy efficiency and modern design.`,
-    link: "https://atomberg.com/",
-    github: null, // Private commercial project
-    logo: "/aatomberg.png", 
-    features: [
-      "🌪️ Smart Ceiling Fans Showcase - Interactive product catalog with 360° views and energy efficiency calculators",
-      " IoT Device Integration - Seamless connectivity with smart home ecosystems and mobile app control",
-      " Energy Efficiency Analytics - Real-time power consumption tracking and savings visualization",
-      "🍳 Kitchen Appliances Portal - Comprehensive range of smart mixers and kitchen solutions with recipe integration",
-      " Smart Security Systems - Advanced smart locks with biometric authentication and remote access control",
-      " Mobile-First Design - Optimized shopping experience across all devices with touch-friendly interfaces",
-      "🛠️ Service Network Integration - Pan-India service network with 3000+ daily services and 99% pincode coverage",
-      " Store Locator System - Interactive map with 2000+ authorized dealers and real-time availability",
-      " Product Comparison Tools - Advanced filtering and comparison features for informed purchasing decisions",
-      " Performance Optimization - Fast loading times and smooth animations for enhanced user experience"
-    ],
-  
-    height: 1800,
-    businessImpact: {
-      userEngagement: "+30%",
-      mobileConversion: "+25%", 
-      serviceRequests: "+40%",
-      dealerNetwork: "2000+",
-      customerSatisfaction: "4.6/5"
-    },
-    others: [],
-  },
-  {
-    title: "Sequifi HR Lifecycle Platform",
+    title: "Sequifi HR Lifecycle Platform (with GenAI & RAG)",
     name: "sequifi-hr-platform.tsx",
     banner: "/project_banner.jpg",
     skills: [
@@ -213,39 +148,43 @@ export const projectsdata = () => [
       "TypeScript",
       "Redux Toolkit",
       "Node.js",
-      "Express.js",
-      "PostgreSQL",
       "GraphQL",
-      "Microservices",
+      "WebSockets",
+      "PostgreSQL",
+      "LLM APIs (OpenAI, Anthropic Claude)",
+      "Retrieval-Augmented Generation (RAG)",
+      "Zod",
+      "Storybook",
       "Docker",
-      "AWS",
-      "Storybook"
+      "AWS"
     ],
-    description: `Comprehensive HR lifecycle management platform serving 500+ companies. Leading development of enterprise-grade solutions for employee contract management, hiring pipelines, and onboarding systems with measurable business impact.`,
+    description: `Multi-tenant HR lifecycle SaaS platform I've been architecting and delivering at Sequifi Technologies, serving 500+ enterprise clients across hiring, contracts, and onboarding. Includes a production GenAI feature that integrates LLM APIs with a retrieval-augmented generation pipeline to ground model responses in company knowledge.`,
     link: null, // Private enterprise platform
     github: null, // Confidential HR platform
     logo: "/sequifi.png",
     features: [
-      " HR Platform for 500+ Companies - Led development improving HR efficiency by 40% across diverse organizations",
-      " Employee Contract Management System - Reduced contract errors by 65% with automated workflows and digital signatures",
-      " Multi-Stage Hiring Pipeline - Built advanced recruitment system reducing hiring time by 50% for 2000+ candidates",
-      " Digital Onboarding Platform - Streamlined onboarding from 5 to 2 days with 78% completion rate improvement",
-      " Custom UI Component Library - Designed 50+ reusable components cutting development time by 35%",
-      " Performance Optimization - Implemented code splitting & lazy loading reducing load time by 45%",
-      " Payment Gateway Integration - Seamless payroll and billing systems with multiple payment providers",
-      "✍️ E-Signature API Integration - Digital document signing with legal compliance and audit trails",
-      "🔍 Background Verification Services - Automated candidate screening and verification workflows",
-      " Advanced Analytics Dashboard - Real-time HR metrics, reporting, and business intelligence tools"
+      " Multi-Tenant HR Lifecycle SaaS Platform - Serving 500+ enterprise clients, increasing user engagement by 20% through Agile, cross-functional delivery",
+      "🧠 Production GenAI Feature - LLM APIs integrated with a Retrieval-Augmented Generation (RAG) pipeline: document chunking, embedding generation, vector similarity search, and context assembly to reduce hallucinations",
+      "⚡ Streaming AI Responses & Structured Output - Real-time streaming response UI in React, Zod-based structured output validation, and authenticated LLM routes with RBAC",
+      " Real-Time Multi-Stage Hiring Pipeline - GraphQL subscriptions and WebSocket-backed push notifications, reducing average hiring time by 50% across 2,000+ active candidates",
+      " Employee Contract Management System - Dynamic form generation, audit trails, and e-signature API integrations, reducing contract processing errors by 65%",
+      " Digital Employee Onboarding Platform - Document uploads, e-signatures, and workflow automation, cutting onboarding time from 5 days to 2 days and increasing completion rates by 78%",
+      " Modular Next.js & React.js Architecture - Feature-based structure, dynamic imports, and route-level lazy loading, reducing initial load time by 45% while sustaining Lighthouse scores above 90",
+      " Reusable UI Component Library - 50+ production React components documented in Storybook, reducing frontend development effort by 35%",
+      " Stripe Payments, Background-Verification & E-Signature Integrations - Delivered behind clean service abstractions with defined REST/GraphQL contracts",
+      " Normalized Redux Toolkit State with Memoized Selectors (Reselect) - Improved application responsiveness by 30% by eliminating redundant API calls",
+      "🔐 JWT Authentication, RBAC & XSS/CSRF Protection - Secured the platform end to end with role-based access control",
+      " Owned Git Workflow & CI/CD Release Process - Mentored 3+ junior engineers on coding standards, testing, and performance profiling"
     ],
-   
-    height: 2300,
+    height: 2600,
     businessImpact: {
-      hrEfficiency: "+40%",
-      contractErrors: "-65%", 
+      userEngagement: "+20%",
       hiringTime: "-50%",
-      onboardingTime: "-60%",
+      contractErrors: "-65%",
+      onboardingCompletion: "+78%",
+      loadTime: "-45%",
       devTime: "-35%",
-      loadTime: "-45%"
+      genAiFeature: "RAG-Grounded"
     },
     others: [],
   }

@@ -76,39 +76,39 @@ const Home: NextPage = () => {
   ];
 
   const stats = [
-    { label: 'Years Experience', value: '4+', icon: <Award className="w-6 h-6" />, color: 'text-blue-500' },
-    { label: 'Companies', value: '3+', icon: <Building2 className="w-6 h-6" />, color: 'text-green-500' },
-    { label: 'Technologies', value: '20+', icon: <Zap className="w-6 h-6" />, color: 'text-yellow-500' },
+    { label: 'Years Experience', value: '5+', icon: <Award className="w-6 h-6" />, color: 'text-blue-500' },
+    { label: 'Companies', value: '4+', icon: <Building2 className="w-6 h-6" />, color: 'text-green-500' },
+    { label: 'Technologies', value: '35+', icon: <Zap className="w-6 h-6" />, color: 'text-yellow-500' },
     { label: 'Projects Delivered', value: '50+', icon: <CheckCircle className="w-6 h-6" />, color: 'text-purple-500' },
   ];
 
   return (
     <>
       <Head>
-        <title>Kunal Verma - Full Stack Developer | React, Next.js & TypeScript Expert | Portfolio 2024</title>
-        <meta name="description" content="Experienced Full Stack Developer with 4+ years expertise in React, Next.js, TypeScript, Node.js. Built 50+ scalable web applications for 3+ companies. Available for freelance projects and full-time opportunities." />
-        <meta name="keywords" content="Full Stack Developer, React Developer, Next.js Expert, TypeScript Developer, Node.js Developer, JavaScript Developer, Frontend Developer, Backend Developer, Web Developer, Software Engineer, Freelance Developer, React Native, MongoDB, PostgreSQL, AWS, Docker, Kunal Verma Portfolio" />
-        
+        <title>Kunal Verma - Senior Full Stack Engineer | React, Next.js, Node.js & GenAI/RAG</title>
+        <meta name="description" content="Senior Full Stack Engineer with 5+ years building production web apps across HRTech, FinTech, Healthcare, and E-commerce. React.js, Next.js, TypeScript, Node.js on the front and back end, plus production GenAI/RAG features with LLM API integration. Delivered platforms serving 500+ enterprise clients." />
+        <meta name="keywords" content="Senior Full Stack Engineer, React Developer, Next.js Expert, TypeScript Developer, Node.js Developer, GenAI Developer, RAG Engineer, LLM Integration, Retrieval-Augmented Generation, Frontend Developer, Backend Developer, Software Engineer, PostgreSQL, Redis, GraphQL, AWS, Docker, Kunal Verma Portfolio" />
+
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Kunal Verma - Full Stack Developer | React & Next.js Expert" />
-        <meta property="og:description" content="Experienced Full Stack Developer with 4+ years expertise. Built 50+ scalable applications using React, Next.js, TypeScript, Node.js. Available for hire." />
-        <meta property="og:url" content="https://kunalverma.dev" />
-        <meta property="og:image" content="https://kunalverma.dev/project_banner.jpg" />
+        <meta property="og:title" content="Kunal Verma - Senior Full Stack Engineer | React, Next.js & GenAI/RAG" />
+        <meta property="og:description" content="Senior Full Stack Engineer with 5+ years of experience. Delivered platforms serving 500+ enterprise clients using React, Next.js, TypeScript, Node.js, and production GenAI/RAG features. Available for hire." />
+        <meta property="og:url" content="https://kunalportfolio.wasmer.app" />
+        <meta property="og:image" content="https://kunalportfolio.wasmer.app/project_banner.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Kunal Verma - Full Stack Developer Portfolio" />
-        
+        <meta property="og:image:alt" content="Kunal Verma - Senior Full Stack Engineer Portfolio" />
+
         {/* Twitter Card Tags */}
-        <meta name="twitter:title" content="Kunal Verma - Full Stack Developer | React & Next.js Expert" />
-        <meta name="twitter:description" content="Experienced Full Stack Developer with 4+ years expertise. Built 50+ scalable applications. Available for hire." />
-        <meta name="twitter:image" content="https://kunalverma.dev/project_banner.jpg" />
-        <meta name="twitter:image:alt" content="Kunal Verma - Full Stack Developer Portfolio" />
-        
+        <meta name="twitter:title" content="Kunal Verma - Senior Full Stack Engineer | React, Next.js & GenAI/RAG" />
+        <meta name="twitter:description" content="Senior Full Stack Engineer with 5+ years of experience. Delivered platforms serving 500+ enterprise clients using React, Next.js, TypeScript, Node.js, and GenAI/RAG. Available for hire." />
+        <meta name="twitter:image" content="https://kunalportfolio.wasmer.app/project_banner.jpg" />
+        <meta name="twitter:image:alt" content="Kunal Verma - Senior Full Stack Engineer Portfolio" />
+
         {/* Additional SEO Tags */}
         <meta name="geo.region" content="IN" />
         <meta name="geo.country" content="India" />
-        <meta name="geo.placename" content="India" />
-        <link rel="canonical" href="https://kunalverma.dev" />
+        <meta name="geo.placename" content="Indore, Madhya Pradesh, India" />
+        <link rel="canonical" href="https://kunalportfolio.wasmer.app" />
         
         {/* Structured Data - Person Schema */}
         <script
@@ -118,42 +118,47 @@ const Home: NextPage = () => {
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Kunal Verma",
-              "jobTitle": "Full Stack Developer",
-              "description": "Experienced Full Stack Developer specializing in React, Next.js, TypeScript, and modern web technologies",
-              "url": "https://kunalverma.dev",
-              "image": "https://kunalverma.dev/project_banner.jpg",
+              "jobTitle": "Senior Full Stack Engineer",
+              "description": "Senior Full Stack Engineer specializing in React, Next.js, TypeScript, Node.js, and production GenAI/RAG features",
+              "url": "https://kunalportfolio.wasmer.app",
+              "image": "https://kunalportfolio.wasmer.app/project_banner.jpg",
+              "email": "mailto:kunalv899@gmail.com",
+              "telephone": "+91-6266155742",
               "sameAs": [
-                "https://github.com/kunalverma",
-                "https://linkedin.com/in/kunalverma",
-                "https://twitter.com/kunalverma"
+                "https://github.com/kunalv899",
+                "https://linkedin.com/in/kunalv899"
               ],
               "knowsAbout": [
-                "React", "Next.js", "TypeScript", "Node.js", "JavaScript", 
+                "React", "Next.js", "TypeScript", "Node.js", "JavaScript",
                 "Full Stack Development", "Frontend Development", "Backend Development",
-                "MongoDB", "PostgreSQL", "AWS", "Docker", "React Native"
+                "GenAI", "Retrieval-Augmented Generation (RAG)", "LLM API Integration",
+                "PostgreSQL", "Redis", "GraphQL", "AWS", "Docker"
               ],
-              "alumniOf": "Computer Science Engineering",
+              "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "BM College of Engineering, Indore"
+              },
               "workLocation": {
                 "@type": "Place",
-                "name": "India"
+                "name": "Indore, Madhya Pradesh, India"
               },
               "hasOccupation": {
                 "@type": "Occupation",
-                "name": "Full Stack Developer",
+                "name": "Senior Full Stack Engineer",
                 "occupationLocation": {
                   "@type": "Country",
                   "name": "India"
                 },
                 "estimatedSalary": {
                   "@type": "MonetaryAmountDistribution",
-                  "name": "Full Stack Developer Salary",
+                  "name": "Senior Full Stack Engineer Salary",
                   "currency": "USD"
                 }
               }
             })
           }}
         />
-        
+
         {/* Professional Service Schema */}
         <script
           type="application/ld+json"
@@ -161,15 +166,15 @@ const Home: NextPage = () => {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
-              "name": "Kunal Verma - Full Stack Development Services",
-              "description": "Professional web development services specializing in React, Next.js, and modern web technologies",
+              "name": "Kunal Verma - Full Stack & GenAI Development Services",
+              "description": "Professional full-stack and GenAI/RAG development services specializing in React, Next.js, Node.js, and LLM-powered applications",
               "provider": {
                 "@type": "Person",
                 "name": "Kunal Verma"
               },
               "areaServed": "Worldwide",
               "serviceType": "Web Development",
-              "url": "https://kunalverma.dev"
+              "url": "https://kunalportfolio.wasmer.app"
             })
           }}
         />
@@ -276,22 +281,22 @@ const Home: NextPage = () => {
                     <span className="text-vscode-operator">;</span>
                   </motion.p>
                   
-                  <motion.p 
+                  <motion.p
                     className="text-vscode-comment italic pl-4"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 1.2 }}
                   >
-                    {`// Frontend Developer | React.js & Next.js Specialist`}
+                    {`// Senior Full Stack Engineer | React.js, Next.js & Node.js Specialist`}
                   </motion.p>
-                  
-                  <motion.p 
+
+                  <motion.p
                     className="text-vscode-comment italic pl-4"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 1.4 }}
                   >
-                    {`// Building enterprise-grade solutions with modern tech stack`}
+                    {`// Building enterprise-grade solutions with production GenAI & RAG`}
                   </motion.p>
                 </div>
               </motion.div>
@@ -524,8 +529,8 @@ const Home: NextPage = () => {
                 <span className="text-sm font-semibold">Get In Touch</span>
               </motion.a>
               <motion.a
-                href="/Resume/Kunal_Verma_React_NextJS_Developer.pdf"
-                download="Kunal_Verma_React_NextJS_Developer.pdf"
+                href="/Resume/Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
+                download="Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}

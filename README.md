@@ -106,7 +106,7 @@ Update the email settings in `pages/api/sendEmail.ts`:
 
 ### **Customization**
 - **Personal Info**: Update `Components/JSON/projectsdata.ts`
-- **Resume**: Replace `public/Resume/Kunal_Verma_React_NextJS_Developer.pdf`
+- **Resume**: Replace `public/Resume/Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf`
 - **Images**: Update project images in `public/` directory
 - **Colors**: Modify VS Code theme colors in `styles/vscode-theme.css`
 

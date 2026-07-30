@@ -52,59 +52,65 @@ const MyWork: NextPage = () => {
   const experiences = [
     {
       company: "Sequifi Technologies",
-      location: "Indore",
-      position: "Frontend Developer",
+      location: "Indore, Madhya Pradesh",
+      position: "Senior Full Stack Engineer",
       duration: "Feb 2025 – Present",
       logo: "/sequifi-logo.png",
       achievements: [
-        "Led development of HR lifecycle platform for 500+ companies, improving HR efficiency by 40%",
-        "Built Employee Contract Management System, cutting contract errors by 65%",
-        "Developed Hiring Pipeline with multi-stage approvals, reducing hiring time by 50% for 2000+ candidates",
-        "Launched Onboarding Platform with e-signatures & progress tracking, reducing onboarding from 5 to 2 days",
-        "Designed UI Component Library (50+ reusable components), cutting dev time by 35%",
-        "Improved performance via code splitting & lazy loading, reducing load time by 45%"
+        "Architected and delivered a multi-tenant HR lifecycle SaaS platform serving 500+ enterprise clients, increasing user engagement by 20%",
+        "Shipped a production GenAI feature integrating LLM APIs with a RAG pipeline - document chunking, embeddings, vector similarity search, and context assembly to reduce hallucinations",
+        "Built the AI feature end to end in TypeScript with a streaming response UI, Zod-based structured output validation, and authenticated LLM routes with RBAC",
+        "Built a modular Next.js & React.js app with feature-based architecture and route-level lazy loading, reducing initial load time by 45% while sustaining Lighthouse scores above 90",
+        "Designed a real-time multi-stage hiring pipeline with GraphQL subscriptions and WebSocket-backed push notifications, reducing average hiring time by 50% across 2,000+ candidates",
+        "Developed an Employee Contract Management System with e-signature API integrations, reducing contract processing errors by 65%",
+        "Delivered a digital onboarding platform, cutting onboarding time from 5 days to 2 days and increasing completion rates by 78%",
+        "Built a reusable UI component library of 50+ production React components documented in Storybook, reducing frontend development effort by 35%",
+        "Improved application responsiveness by 30% using normalized Redux Toolkit state and memoized selectors (Reselect)",
+        "Implemented JWT authentication, RBAC, and XSS/CSRF protection; owns Git workflow and CI/CD, mentoring 3+ junior engineers"
       ],
-      technologies: ["React.js", "Next.js", "TypeScript", "Redux", "Node.js"]
+      technologies: ["React.js", "Next.js", "TypeScript", "Redux Toolkit", "Node.js", "GraphQL", "LLM APIs (RAG)", "Zod"]
     },
     {
       company: "Growisto",
-      location: "Mumbai",
+      location: "Mumbai, India (Remote)",
       position: "Full Stack Developer",
       duration: "May 2022 – Feb 2025",
       logo: "/growisto-logo.png",
       projects: "HDFC Bank (BaaS), Kama Ayurveda, Dozee",
       achievements: [
-        "Delivered Admin Dashboard & Status Management System for HDFC Bank, reducing manual work by 50%",
-        "Built Corporate Partner Portal, improving submission speed by 20%",
-        "Enhanced Customer Account Management & Authentication for Kama Ayurveda, boosting retention by 15%",
-        "Implemented Loyalty & Rewards Platform, increasing participation by 20%",
-        "Developed Dozee website from scratch using React.js & Next.js, achieving 50% traffic growth",
-        "Increased engagement with Lottie animations (+25%) and streamlined content management via Strapi CMS"
+        "Built and shipped an enterprise Admin Dashboard & Status Management System for HDFC Bank (BaaS), reducing manual operational effort by 50% and SLA delays by 30%",
+        "Enhanced REST APIs, introduced Redis caching, and optimized SQL queries to reduce response times and backend server load across high-traffic banking services",
+        "Delivered a Corporate Partner Portal with multi-role authentication, Elasticsearch-powered search, and dynamic approval workflows, improving onboarding submission speed by 20%",
+        "Rebuilt customer authentication and account management on a secure token-based architecture, reducing login failures by 30% and increasing customer retention by 15%",
+        "Developed a Loyalty & Rewards Platform with real-time point tracking, tier-based rewards, and redemption workflows, increasing customer engagement by 20%",
+        "Managed complex application state with Redux Toolkit and React Query, keeping performance and data consistency stable through high-traffic sale events",
+        "Built the company website with Next.js SSR and SSG and integrated Strapi as a headless CMS, growing organic traffic by 50% in three months and improving marketing publishing efficiency by 40%",
+        "Partnered with backend teams on API design and contract definition, improving maintainability across enterprise banking applications"
       ],
-      technologies: ["React.js", "Next.js", "Redux", "GraphQL", "Node.js", "PostgreSQL"]
+      technologies: ["React.js", "Next.js", "Redux Toolkit", "React Query", "GraphQL", "Node.js", "PostgreSQL", "Redis", "Elasticsearch"]
     },
     {
       company: "AI Trillion",
       location: "Indore",
-      position: "Shopify Consultant & React.js Developer",
+      position: "React.js Developer & Shopify Consultant",
       duration: "Aug 2021 – May 2022",
       logo: "/aitrillion-logo.png",
       achievements: [
-        "Improved Shopify stores (e.g., Aakash Namkeen, Indian Milk & Honey) with 15% performance gains",
-        "Optimized websites for 20% faster load times, boosting customer satisfaction",
-        "Delivered custom Shopify solutions and performance enhancements"
+        "Optimized Shopify storefront performance for brands including Aakash Namkeen and Indian Milk & Honey, delivering 15% performance improvements",
+        "Reduced page load times by 20% through lazy loading, asset optimization, and image compression, improving Core Web Vitals and customer experience",
+        "Built reusable React.js components integrated with Shopify Liquid templates to standardize storefront UI across client projects"
       ],
       technologies: ["React.js", "Shopify", "JavaScript", "CSS3", "HTML5"]
     },
     {
       company: "Parkhya Solutions",
       location: "Indore",
-      position: "Shopify Consultant",
+      position: "Shopify Developer",
       duration: "Jan 2021 – Jul 2021",
       logo: "/parkhya-logo.png",
       achievements: [
-        "Delivered custom Shopify solutions and performance enhancements for multiple client projects",
-        "Specialized in e-commerce optimization and user experience improvements"
+        "Developed custom Shopify themes, reusable UI components, and third-party integrations across multiple client projects",
+        "Delivered responsive, cross-browser compatible storefronts, improving project delivery efficiency through a reusable component architecture"
       ],
       technologies: ["Shopify", "JavaScript", "CSS3", "HTML5"]
     }
@@ -113,8 +119,8 @@ const MyWork: NextPage = () => {
   return (
     <div>
         <Head>
-        <title>Professional Experience - Kunal Verma</title>
-        <meta name="description" content="4+ years of professional experience in React.js, Next.js development" />
+        <title>Professional Experience - Kunal Verma | Senior Full Stack Engineer</title>
+        <meta name="description" content="5+ years of professional experience in React.js, Next.js, Node.js, and production GenAI/RAG development across HRTech, FinTech, Healthcare, and E-commerce." />
           <link rel="icon" href="/favicon.ico" />
         </Head>
       
@@ -185,10 +191,10 @@ const MyWork: NextPage = () => {
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <CustomBadge 
-                  label="4+ Years" 
-                  color="success" 
-                  size="lg" 
+                <CustomBadge
+                  label="5+ Years"
+                  color="success"
+                  size="lg"
                   variant="glow"
                 />
               </motion.div>
@@ -196,10 +202,10 @@ const MyWork: NextPage = () => {
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <CustomBadge 
-                  label="React Expert" 
-                  color="brand" 
-                  size="lg" 
+                <CustomBadge
+                  label="React & Next.js Expert"
+                  color="brand"
+                  size="lg"
                   variant="glow"
                 />
               </motion.div>
@@ -207,10 +213,10 @@ const MyWork: NextPage = () => {
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <CustomBadge 
-                  label="Enterprise" 
-                  color="aqua" 
-                  size="lg" 
+                <CustomBadge
+                  label="Enterprise"
+                  color="aqua"
+                  size="lg"
                   variant="glow"
                   icon={<Building2 className="w-4 h-4" />}
                 />
@@ -219,10 +225,10 @@ const MyWork: NextPage = () => {
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <CustomBadge 
-                  label="E-commerce" 
-                  color="warning" 
-                  size="lg" 
+                <CustomBadge
+                  label="GenAI & RAG"
+                  color="warning"
+                  size="lg"
                   variant="glow"
                   icon={<Globe className="w-4 h-4" />}
                 />
@@ -241,11 +247,11 @@ const MyWork: NextPage = () => {
                 size="lg"
                 className="relative font-medium text-vscode-foreground/90 max-w-5xl mx-auto bg-vscode-sidebar-bg/50 backdrop-blur-sm rounded-2xl p-6 border border-vscode-border/30"
               >
-                <span className="text-vscode-accent font-bold">Transforming businesses</span> through innovative frontend solutions with 
-                <span className="text-blue-400 font-semibold"> proven impact</span> across 
-                <span className="text-green-400 font-semibold"> HR platforms</span>, 
+                <span className="text-vscode-accent font-bold">Transforming businesses</span> through full-stack and GenAI solutions with
+                <span className="text-blue-400 font-semibold"> proven impact</span> across
+                <span className="text-green-400 font-semibold"> HR platforms</span>,
                 <span className="text-yellow-400 font-semibold"> e-commerce systems</span>, and&nbsp;
-                <span className="text-vscode-accent font-semibold">enterprise applications</span>.
+                <span className="text-vscode-accent font-semibold">enterprise banking applications</span>.
               </DescriptionText>
             </motion.div>
           </div>
@@ -513,7 +519,7 @@ const MyWork: NextPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          <MediumHeading 
+          <MediumHeading
             size="lg"
             className="font-bold text-vscode-accent mb-6 flex items-center gap-3"
             as="h3"
@@ -521,94 +527,73 @@ const MyWork: NextPage = () => {
             <BadgeDot color="brand" size="lg" />
             Education
           </MediumHeading>
-          <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-3">
+          <div className="max-w-xl">
             <div className="bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-4 hover:shadow-md transition-all duration-300">
               <div className="flex items-center gap-2 mb-2">
                 <CardIcon size="sm" className="text-blue-600">
                   <Code2 className="w-5 h-5" />
                 </CardIcon>
-                <CardHeading 
+                <CardHeading
                   size="sm"
                   className="font-semibold text-blue-900"
                   as="h4"
                 >
-                  B.E. – Computer Science
+                  Bachelor of Engineering – Computer Science
                 </CardHeading>
               </div>
-              <CardDescription 
+              <CardDescription
                 size="sm"
                 className="text-blue-700 mb-2"
               >
-                BM College, Indore
+                BM College of Engineering, Indore, India
               </CardDescription>
               <div className="flex justify-start">
-              <CustomBadge 
-                label="2016 – 2020" 
-                color="brand" 
-                size="sm" 
-                variant="glow"
-                icon={<Calendar className="w-3 h-3" />}
-              />
-              </div>
-            </div>
-            <div className="bg-gradient-to-br from-green-50 to-green-100 border border-green-200 rounded-lg p-4 hover:shadow-md transition-all duration-300">
-              <div className="flex items-center gap-2 mb-2">
-                <CardIcon size="sm" className="text-green-600">
-                  <Database className="w-5 h-5" />
-                </CardIcon>
-                <CardHeading 
+                <CustomBadge
+                  label="2020"
+                  color="brand"
                   size="sm"
-                  className="font-semibold text-green-900"
-                  as="h4"
-                >
-                  Higher Secondary (12th)
-                </CardHeading>
-              </div>
-              <CardDescription 
-                size="sm"
-                className="text-green-700 mb-2"
-              >
-                GVM, Indore
-              </CardDescription>
-              <div className="flex justify-start">
-              <CustomBadge 
-                  label="2015 – 2016" 
-                color="success" 
-                size="sm" 
-                variant="glow"
-                  icon={<Calendar className="w-3 h-3" />}
-              />
-              </div>
-                  </div>
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200 rounded-lg p-4 hover:shadow-md transition-all duration-300">
-              <div className="flex items-center gap-2 mb-2">
-                <CardIcon size="sm" className="text-purple-600">
-                  <Globe className="w-5 h-5" />
-                </CardIcon>
-                <CardHeading 
-                  size="sm"
-                  className="font-semibold text-purple-900"
-                  as="h4"
-                >
-                  High School (10th)
-                </CardHeading>
-                  </div>
-              <CardDescription 
-                size="sm"
-                className="text-purple-700 mb-2"
-              >
-                GVM, Indore
-              </CardDescription>
-              <div className="flex justify-start">
-              <CustomBadge 
-                  label="2014 – 2015" 
-                color="aqua" 
-                size="sm" 
-                variant="glow"
+                  variant="glow"
                   icon={<Calendar className="w-3 h-3" />}
                 />
               </div>
             </div>
+          </div>
+        </motion.div>
+
+        {/* Certifications Section */}
+        <motion.div
+          className="mt-8 bg-vscode-sidebar-bg border border-vscode-border rounded-xl p-6 sm:p-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.55 }}
+        >
+          <MediumHeading
+            size="lg"
+            className="font-bold text-vscode-accent mb-6 flex items-center gap-3"
+            as="h3"
+          >
+            <BadgeDot color="success" size="lg" />
+            Certifications
+          </MediumHeading>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {[
+              { title: "Advanced React.js Patterns & Performance Optimization", color: "brand" },
+              { title: "TypeScript & Modern JavaScript Mastery", color: "warning" },
+              { title: "Redux Toolkit & State Management Best Practices", color: "success" },
+              { title: "Responsive Web Design & Accessibility Standards (WCAG)", color: "aqua" },
+            ].map((cert) => (
+              <div
+                key={cert.title}
+                className="flex items-start gap-3 bg-vscode-editor-bg/50 border border-vscode-border/30 rounded-lg p-4 hover:border-vscode-accent/50 transition-all duration-300"
+              >
+                <CardIcon size="sm" className="text-vscode-accent flex-shrink-0 mt-0.5">
+                  <Award className="w-5 h-5" />
+                </CardIcon>
+                <CardDescription size="sm" className="text-vscode-foreground/90 font-medium">
+                  {cert.title}
+                </CardDescription>
+              </div>
+            ))}
           </div>
         </motion.div>
 
@@ -643,8 +628,8 @@ const MyWork: NextPage = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.a
-                href="/Resume/Kunal_Verma_React_NextJS_Developer.pdf"
-                download="Kunal_Verma_React_NextJS_Developer.pdf"
+                href="/Resume/Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
+                download="Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
                 className="inline-flex items-center gap-3 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -653,7 +638,7 @@ const MyWork: NextPage = () => {
                 Download Resume
               </motion.a>
               <motion.a
-                href="/Resume/Kunal_Verma_React_NextJS_Developer.pdf"
+                href="/Resume/Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-6 py-3 bg-white hover:bg-gray-50 text-orange-600 border border-orange-300 hover:border-orange-400 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg"
@@ -668,8 +653,8 @@ const MyWork: NextPage = () => {
             {/* Resume Stats */}
               <div className="mt-6 pt-4 border-t border-vscode-border/30">
               <div className="flex flex-wrap justify-center gap-3">
-                <CustomBadge label="4+ Years Experience" color="success" size="sm" variant="outline" />
-                <CustomBadge label="3+ Companies" color="brand" size="sm" variant="outline" />
+                <CustomBadge label="5+ Years Experience" color="success" size="sm" variant="outline" />
+                <CustomBadge label="4+ Companies" color="brand" size="sm" variant="outline" />
                 <CustomBadge label="50+ Projects" color="warning" size="sm" variant="outline" />
                 <CustomBadge label="Available for Interview" color="error" size="sm" variant="glow" />
               </div>

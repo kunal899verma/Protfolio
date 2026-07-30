@@ -24,13 +24,13 @@ import {
   StatIcon, 
   EmojiIcon 
 } from "../Components/Icons";
-import { 
-  Monitor, 
-  RefreshCw, 
-  Database, 
-  Sparkles, 
-  Wrench, 
-  TestTube, 
+import {
+  Monitor,
+  RefreshCw,
+  Database,
+  Sparkles,
+  Wrench,
+  TestTube,
   ShoppingCart,
   Rocket,
   Folder,
@@ -49,13 +49,30 @@ import {
   Package,
   Palette,
   BookOpen,
-  Globe
+  Globe,
+  Brain,
+  ShieldCheck
 } from "lucide-react";
 
 const Skills: NextPage = () => {
   const { handleError, isError, errorMessage, clearError, error } = useErrorHandler();
 
   const skillCategories = [
+    {
+      title: "AI & GenAI",
+      icon: <Brain className="w-6 h-6" />,
+      color: "aqua",
+      skills: [
+        { name: "LLM API Integration (OpenAI, Claude)", level: "Advanced", color: "aqua" },
+        { name: "Retrieval-Augmented Generation (RAG)", level: "Advanced", color: "aqua" },
+        { name: "Embeddings & Vector Search", level: "Advanced", color: "brand" },
+        { name: "Prompt Engineering", level: "Advanced", color: "warning" },
+        { name: "Structured Output Validation (Zod)", level: "Advanced", color: "success" },
+        { name: "Streaming AI Responses", level: "Advanced", color: "error" },
+        { name: "Document Chunking & Context Assembly", level: "Intermediate", color: "paleBlue" },
+        { name: "Token & Cost Optimization", level: "Intermediate", color: "orange" }
+      ]
+    },
     {
       title: "Frontend Development",
       icon: <Monitor className="w-6 h-6" />,
@@ -68,6 +85,7 @@ const Skills: NextPage = () => {
         { name: "HTML5", level: "Expert", color: "orange" },
         { name: "CSS3", level: "Advanced", color: "paleBlue" },
         { name: "Tailwind CSS", level: "Advanced", color: "success" },
+        { name: "Material UI", level: "Advanced", color: "aqua" },
         { name: "Styled Components", level: "Intermediate", color: "aqua" }
       ]
     },
@@ -80,7 +98,8 @@ const Skills: NextPage = () => {
         { name: "React Query", level: "Advanced", color: "error" },
         { name: "Context API", level: "Expert", color: "brand" },
         { name: "Zustand", level: "Intermediate", color: "orange" },
-        { name: "GraphQL", level: "Intermediate", color: "aqua" },
+        { name: "GraphQL (Queries, Mutations, Subscriptions)", level: "Advanced", color: "aqua" },
+        { name: "WebSockets", level: "Advanced", color: "success" },
         { name: "REST APIs", level: "Expert", color: "success" }
       ]
     },
@@ -91,8 +110,23 @@ const Skills: NextPage = () => {
       skills: [
         { name: "Node.js", level: "Advanced", color: "success" },
         { name: "Express.js", level: "Advanced", color: "neutral" },
-        { name: "PostgreSQL", level: "Intermediate", color: "paleBlue" },
+        { name: "PostgreSQL", level: "Advanced", color: "paleBlue" },
+        { name: "Redis", level: "Advanced", color: "error" },
+        { name: "Elasticsearch", level: "Intermediate", color: "aqua" },
         { name: "Microservices", level: "Intermediate", color: "aqua" }
+      ]
+    },
+    {
+      title: "Security",
+      icon: <ShieldCheck className="w-6 h-6" />,
+      color: "error",
+      skills: [
+        { name: "JWT Authentication", level: "Expert", color: "success" },
+        { name: "Role-Based Access Control (RBAC)", level: "Expert", color: "brand" },
+        { name: "XSS Prevention", level: "Advanced", color: "warning" },
+        { name: "CSRF Protection", level: "Advanced", color: "error" },
+        { name: "CORS & OWASP Top 10", level: "Advanced", color: "aqua" },
+        { name: "Secure Token Management", level: "Advanced", color: "paleBlue" }
       ]
     },
     {
@@ -102,7 +136,7 @@ const Skills: NextPage = () => {
       skills: [
         { name: "Framer Motion", level: "Advanced", color: "aqua" },
         { name: "Lottie Animations", level: "Intermediate", color: "warning" },
-        { name: "Storybook", level: "Intermediate", color: "error" }
+        { name: "Storybook", level: "Advanced", color: "error" }
       ]
     },
     {
@@ -110,7 +144,9 @@ const Skills: NextPage = () => {
       icon: <Wrench className="w-6 h-6" />,
       color: "paleBlue",
       skills: [
-        { name: "Docker", level: "Intermediate", color: "paleBlue" },
+        { name: "Docker", level: "Advanced", color: "paleBlue" },
+        { name: "AWS (S3, EC2)", level: "Advanced", color: "orange" },
+        { name: "GitHub Actions / CI-CD", level: "Advanced", color: "neutral" },
         { name: "GitHub", level: "Expert", color: "neutral" },
         { name: "Webpack", level: "Advanced", color: "paleBlue" },
         { name: "Vite", level: "Advanced", color: "aqua" },
@@ -119,14 +155,15 @@ const Skills: NextPage = () => {
       ]
     },
     {
-      title: "Testing & Cloud",
+      title: "Testing & Performance",
       icon: <TestTube className="w-6 h-6" />,
       color: "error",
       skills: [
         { name: "Jest", level: "Advanced", color: "error" },
         { name: "React Testing Library", level: "Advanced", color: "error" },
-        { name: "AWS (Basics)", level: "Beginner", color: "orange" },
-        { name: "Strapi CMS", level: "Intermediate", color: "aqua" }
+        { name: "Lighthouse & Web Vitals", level: "Advanced", color: "warning" },
+        { name: "Chrome DevTools Profiling", level: "Advanced", color: "aqua" },
+        { name: "Strapi CMS", level: "Advanced", color: "aqua" }
       ]
     },
     {
@@ -194,25 +231,25 @@ const Skills: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Technical Skills | Kunal Verma - React, Next.js, TypeScript, Node.js Expert</title>
-        <meta name="description" content="Comprehensive technical skills in React, Next.js, TypeScript, Node.js, MongoDB, PostgreSQL, AWS, Docker. 4+ years of full-stack development expertise with modern web technologies and frameworks." />
-        <meta name="keywords" content="React Skills, Next.js Expert, TypeScript Developer, Node.js Backend, JavaScript ES6+, MongoDB Database, PostgreSQL, AWS Cloud, Docker Containers, Git Version Control, REST API, GraphQL, Responsive Design, Web Performance" />
-        
+        <title>Technical Skills | Kunal Verma - React, Next.js, Node.js & GenAI/RAG Expert</title>
+        <meta name="description" content="Comprehensive technical skills across React, Next.js, TypeScript, Node.js, PostgreSQL, Redis, AWS, Docker, and production GenAI/RAG (LLM APIs, embeddings, vector search). 5+ years of full-stack development expertise." />
+        <meta name="keywords" content="React Skills, Next.js Expert, TypeScript Developer, Node.js Backend, GenAI Skills, RAG Engineer, LLM API Integration, Vector Search, PostgreSQL, Redis, AWS Cloud, Docker Containers, REST API, GraphQL, Web Performance, Security" />
+
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Technical Skills | Kunal Verma - Full Stack Developer" />
-        <meta property="og:description" content="Comprehensive technical skills in React, Next.js, TypeScript, Node.js, and modern web technologies. 4+ years of development expertise." />
-        <meta property="og:url" content="https://kunalverma.dev/Skills" />
-        <meta property="og:image" content="https://kunalverma.dev/project_banner.jpg" />
+        <meta property="og:title" content="Technical Skills | Kunal Verma - Senior Full Stack Engineer" />
+        <meta property="og:description" content="Comprehensive technical skills in React, Next.js, TypeScript, Node.js, and production GenAI/RAG. 5+ years of development expertise." />
+        <meta property="og:url" content="https://kunalportfolio.wasmer.app/Skills" />
+        <meta property="og:image" content="https://kunalportfolio.wasmer.app/project_banner.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
-        
+
         {/* Twitter Card Tags */}
-        <meta name="twitter:title" content="Technical Skills | Kunal Verma - Full Stack Developer" />
-        <meta name="twitter:description" content="Comprehensive technical skills in React, Next.js, TypeScript, Node.js, and modern web technologies." />
-        <meta name="twitter:image" content="https://kunalverma.dev/project_banner.jpg" />
+        <meta name="twitter:title" content="Technical Skills | Kunal Verma - Senior Full Stack Engineer" />
+        <meta name="twitter:description" content="Comprehensive technical skills in React, Next.js, TypeScript, Node.js, and production GenAI/RAG." />
+        <meta name="twitter:image" content="https://kunalportfolio.wasmer.app/project_banner.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        
-        <link rel="canonical" href="https://kunalverma.dev/Skills" />
+
+        <link rel="canonical" href="https://kunalportfolio.wasmer.app/Skills" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="HandheldFriendly" content="True" />
         <meta name="MobileOptimized" content="320" />
@@ -268,11 +305,11 @@ const Skills: NextPage = () => {
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <CustomBadge 
-                  label="4+ Years"
-                  icon={<Zap className="w-4 h-4" />} 
-                  color="success" 
-                  size="lg" 
+                <CustomBadge
+                  label="5+ Years"
+                  icon={<Zap className="w-4 h-4" />}
+                  color="success"
+                  size="lg"
                   variant="glow"
                 />
               </motion.div>
@@ -280,11 +317,11 @@ const Skills: NextPage = () => {
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <CustomBadge 
-                  label="Frontend Expert"
-                  icon={<Target className="w-4 h-4" />} 
-                  color="brand" 
-                  size="lg" 
+                <CustomBadge
+                  label="Full-Stack Expert"
+                  icon={<Target className="w-4 h-4" />}
+                  color="brand"
+                  size="lg"
                   variant="glow"
                 />
               </motion.div>
@@ -292,10 +329,10 @@ const Skills: NextPage = () => {
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <CustomBadge 
-                  label="🏗️ Full-Stack" 
-                  color="aqua" 
-                  size="lg" 
+                <CustomBadge
+                  label="🧠 GenAI & RAG"
+                  color="aqua"
+                  size="lg"
                   variant="glow"
                 />
               </motion.div>
@@ -303,10 +340,10 @@ const Skills: NextPage = () => {
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <CustomBadge 
-                  label="🛠️ Modern Stack" 
-                  color="warning" 
-                  size="lg" 
+                <CustomBadge
+                  label="🛠️ Modern Stack"
+                  color="warning"
+                  size="lg"
                   variant="glow"
                 />
               </motion.div>
@@ -324,11 +361,11 @@ const Skills: NextPage = () => {
                 size="lg"
                 className="relative font-medium text-vscode-foreground/90 max-w-5xl mx-auto bg-vscode-sidebar-bg/50 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-vscode-border/30"
               >
-                <span className="text-vscode-accent font-bold">Crafting digital experiences</span> with 4+ years of expertise in 
-                <span className="text-blue-400 font-semibold"> React.js</span>, 
-                <span className="text-green-400 font-semibold"> Next.js</span>, and 
-                <span className="text-yellow-400 font-semibold"> TypeScript</span>. 
-                Specialized in building <span className="text-vscode-accent font-semibold">high-performance applications</span> that scale.
+                <span className="text-vscode-accent font-bold">Crafting digital experiences</span> with 5+ years of expertise in
+                <span className="text-blue-400 font-semibold"> React.js</span>,
+                <span className="text-green-400 font-semibold"> Next.js</span>, and
+                <span className="text-yellow-400 font-semibold"> TypeScript</span>.
+                Specialized in building <span className="text-vscode-accent font-semibold">high-performance applications</span> and production <span className="text-vscode-accent font-semibold">GenAI/RAG features</span> that scale.
               </DescriptionText>
             </motion.div>
           </div>
@@ -579,10 +616,11 @@ const Skills: NextPage = () => {
                   
                   <div className="flex flex-wrap gap-2 sm:gap-3">
                     {[
+                      { label: "GenAI & RAG Features", color: "aqua", icon: <Brain className="w-3 h-3" /> },
                       { label: "High-Performance Apps", color: "success", icon: <Rocket className="w-3 h-3" /> },
                       { label: "Enterprise Platforms", color: "brand", icon: <Building2 className="w-3 h-3" /> },
                       { label: "E-commerce Solutions", color: "orange", icon: <ShoppingCart className="w-3 h-3" /> },
-                      { label: "Design Systems", color: "aqua", icon: <Palette className="w-3 h-3" /> },
+                      { label: "Design Systems", color: "success", icon: <Palette className="w-3 h-3" /> },
                       { label: "Performance Optimization", color: "warning", icon: <Zap className="w-3 h-3" /> },
                       { label: "Scalable Architecture", color: "paleBlue", icon: <Package className="w-3 h-3" /> }
                     ].map((item, index) => (
@@ -671,8 +709,8 @@ const Skills: NextPage = () => {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 max-w-4xl mx-auto px-2 sm:px-4">
                 {[
                   { number: "50+", label: "Projects", icon: <Rocket className="w-5 h-5" /> },
-                  { number: "7", label: "Categories", icon: <Folder className="w-5 h-5" /> },
-                  { number: "25+", label: "Technologies", icon: <Zap className="w-5 h-5" /> },
+                  { number: "9", label: "Categories", icon: <Folder className="w-5 h-5" /> },
+                  { number: "35+", label: "Technologies", icon: <Zap className="w-5 h-5" /> },
                   { number: "100%", label: "Passion", icon: <Heart className="w-5 h-5" /> }
                 ].map((stat, index) => (
                   <motion.div
@@ -736,8 +774,8 @@ const Skills: NextPage = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.a
-                href="/Resume/Kunal_Verma_React_NextJS_Developer.pdf"
-                download="Kunal_Verma_React_NextJS_Developer.pdf"
+                href="/Resume/Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
+                download="Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
                 className="inline-flex items-center gap-3 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -746,7 +784,7 @@ const Skills: NextPage = () => {
                 Download Resume
               </motion.a>
               <motion.a
-                href="/Resume/Kunal_Verma_React_NextJS_Developer.pdf"
+                href="/Resume/Kunal_Verma_Senior_Full_Stack_Engineer_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-6 py-3 bg-vscode-editor-bg hover:bg-vscode-hover-background text-blue-400 border border-blue-400/50 hover:border-blue-400 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg"
@@ -761,9 +799,9 @@ const Skills: NextPage = () => {
             {/* Skills Summary */}
             <div className="mt-6 pt-4 border-t border-vscode-border/30">
               <div className="flex flex-wrap justify-center gap-3">
-                <CustomBadge label="20+ Technologies" color="brand" size="sm" variant="outline" />
-                <CustomBadge label="Frontend Expert" color="success" size="sm" variant="outline" />
-                <CustomBadge label="Full-Stack Ready" color="warning" size="sm" variant="outline" />
+                <CustomBadge label="35+ Technologies" color="brand" size="sm" variant="outline" />
+                <CustomBadge label="Full-Stack Expert" color="success" size="sm" variant="outline" />
+                <CustomBadge label="GenAI & RAG Ready" color="warning" size="sm" variant="outline" />
                 <CustomBadge label="Modern Stack" color="error" size="sm" variant="glow" />
               </div>
             </div>

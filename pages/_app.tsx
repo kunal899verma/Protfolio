@@ -25,14 +25,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         
         {/* Open Graph Meta Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Kunal Verma - Full Stack Developer Portfolio" />
+        <meta property="og:site_name" content="Kunal Verma - Senior Full Stack Engineer Portfolio" />
         <meta property="og:locale" content="en_US" />
-        
+
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@kunalverma" />
-        <meta name="twitter:site" content="@kunalverma" />
-        
+
         {/* Favicon and Icons */}
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
